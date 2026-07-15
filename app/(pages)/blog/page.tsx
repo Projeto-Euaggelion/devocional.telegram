@@ -98,7 +98,7 @@ export default async function BlogFeedPage({ searchParams }: PageProps) {
                 className="flex flex-col justify-between border border-zinc-800 bg-zinc-900/50 rounded-2xl p-6 hover:border-zinc-700 transition duration-200"
               >
                 <div className="space-y-4">
-                  <span className="text-xs font-semibold text-emerald-500 uppercase tracking-wider">
+                  <span className="text-xs font-semibold text-cyan-500 uppercase tracking-wider">
                     {new Date(post.date).toLocaleDateString("pt-BR", {
                       day: "numeric",
                       month: "long",
@@ -106,7 +106,7 @@ export default async function BlogFeedPage({ searchParams }: PageProps) {
                     })}
                   </span>
                   <h2 className="text-xl font-bold text-zinc-100 line-clamp-2">
-                    <Link href={`/blog/${post.slug}`} className="hover:text-emerald-400 transition">
+                    <Link href={`/blog/${post.slug}`} className="hover:text-cyan-400 transition">
                       {post.title}
                     </Link>
                   </h2>
@@ -117,7 +117,7 @@ export default async function BlogFeedPage({ searchParams }: PageProps) {
                 <div className="pt-6 mt-6 border-t border-zinc-800">
                   <Link 
                     href={`/blog/${post.slug}`} 
-                    className="text-sm font-semibold text-emerald-500 hover:text-emerald-400 flex items-center gap-1 transition"
+                    className="text-sm font-semibold text-cyan-500 hover:text-cyan-400 flex items-center gap-1 transition"
                   >
                     Ler artigo completo &rarr;
                   </Link>
