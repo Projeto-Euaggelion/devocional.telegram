@@ -147,7 +147,7 @@ export default async function DevocionalBomDiaPage({ params }: PageProps) {
   return (
     <main>
       <article className="max-w-3xl md:max-w-full mx-auto space-y-12 prose prose-invert prose-headings:text-zinc-50 prose-p:text-zinc-400 prose-strong:text-zinc-300">
-        <header className="px-8 py-20 md:px-20 md:py-24 bg-green-950">
+        <header className="px-8 py-20 md:px-20 md:py-24 bg-blue-950/40">
           <div className="md:max-w-3xl mx-auto space-y-4">
             <h1 className="text-3xl font-bold md:text-5xl">
               {post.frontmatter.title}
@@ -175,31 +175,31 @@ export default async function DevocionalBomDiaPage({ params }: PageProps) {
           <MDXRemote source={post.content} components={mdxComponents} />
         </section>
 
-        <footer className="relative border-t border-border px-10 md:px-20 py-20 mt-10 bg-green-950">
-            <div className="flex flex-col gap-10 relative z-10">
-                <h4 className="text-4xl font-bold">
-                    Receba nossos devocionais, gratuitamente, em seu WhatsApp
-                </h4>
-                <Button className="w-full py-6 font-semibold">
-                    <a
-                    href="https://whatsapp.com/channel/0029Vb7awlL8aKvAzcgyrd3c"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full h-full flex items-center justify-center"
-                    >
-                    Entrar no canal
-                    </a>
-                </Button>
-            </div>
+        <footer className="relative border-t border-border px-10 md:px-20 py-20 mt-10 md:mt-20 bg-blue-950/40">
+          <div className="max-w-3xl mx-auto flex flex-col gap-10 relative z-10">
+              <h4 className="text-4xl font-bold">
+                  Receba nossos devocionais, gratuitamente, em seu WhatsApp
+              </h4>
+              <Button className="w-full py-6 font-semibold">
+                  <a
+                  href="https://whatsapp.com/channel/0029Vb7awlL8aKvAzcgyrd3c"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full h-full flex items-center justify-center"
+                  >
+                  Entrar no canal
+                  </a>
+              </Button>
+          </div>
 
-            <Image
-                src="/background_white.png"
-                width={800}
-                height={800}
-                alt="WhatsApp Background"
-                className="absolute top-0 left-0 w-full h-full object-cover opacity-10 pointer-events-none select-none z-0"
-                priority
-            />
+          <Image
+              src="/background_white.png"
+              width={800}
+              height={800}
+              alt="WhatsApp Background"
+              className="absolute top-0 left-0 w-full h-full object-cover opacity-10 pointer-events-none select-none z-0"
+              priority
+          />
         </footer>
       </article>
     </main>
