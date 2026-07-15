@@ -1,3 +1,4 @@
+import SiteFooter from "@/components/site-footer"
 import SiteNav from "@/components/site-nav"
 
 export default function PagesLayout({
@@ -8,9 +9,12 @@ export default function PagesLayout({
     return(
         <>
             <SiteNav />
+
             <div className="pt-20">
                 {children}
             </div>
+
+            <SiteFooter />
         </>
     )
 }
