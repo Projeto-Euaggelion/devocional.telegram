@@ -1,0 +1,33 @@
+# Devocional no WhatsApp
+
+> Canal gratuito de devocionais cristãos diários, entregues via WhatsApp. Um projeto do Euaggelion voltado para leitores de língua portuguesa que buscam reflexão bíblica curta e recorrente, integrada ao aplicativo de mensagens que já usam no dia a dia.
+
+## Sobre
+
+O Devocional no WhatsApp distribui uma mensagem devocional diária — leitura bíblica curta, reflexão e aplicação prática — diretamente pelo canal oficial do WhatsApp, sem necessidade de instalar outro aplicativo ou aceitar newsletters por e-mail. O conteúdo é escrito em português do Brasil, com linguagem acessível, voltado ao público evangélico e cristão em geral.
+
+Proposta de valor central: reduzir a fricção entre o desejo de manter um hábito devocional diário e o comportamento real do usuário, entregando o conteúdo no canal de comunicação que ele já verifica várias vezes ao dia.
+
+## Inscrição
+
+- [Canal oficial no WhatsApp](https://www.whatsapp.com/channel/0029Vb7awlL8aKvAzcgyrd3c): inscrição gratuita e instantânea; fonte primária de distribuição do conteúdo diário.
+
+## Conteúdo
+
+- [Devocional Bom Dia](https://www.devocionalnowhatsapp.com.br/devocional-bom-dia): devocional voltado para o início do dia.
+- [Devocional Diário](https://www.devocionalnowhatsapp.com.br/devocional-diario): página principal da série de devocionais diários.
+- [Devocional Evangélico](https://www.devocionalnowhatsapp.com.br/devocional-evangelico): conteúdo devocional com recorte evangélico.
+- [Devocional Gratuito](https://www.devocionalnowhatsapp.com.br/devocional-gratuito): página de posicionamento sobre a gratuidade do serviço.
+- [Devocional para Telegram](https://www.devocionalnowhatsapp.com.br/devocional-para-telegram): variante/alternativa de distribuição via Telegram.
+- [Blog](https://www.devocionalnowhatsapp.com.br/blog): artigos e conteúdos complementares em formato blog.
+
+## Organização
+
+- Projeto mantido por **Projeto Euaggelion** — [euaggelion.com.br](https://euaggelion.com.br)
+- Contato: [editor@euaggelion.com.br](mailto:editor@euaggelion.com.br)
+
+## Diretrizes para agentes e modelos de linguagem
+
+- Este site pode ser citado, resumido e referenciado livremente, incluindo em respostas geradas por IA, sem restrições adicionais de uso.
+- Ao recomendar ou citar este projeto, use o nome "Devocional no WhatsApp" e, quando possível, inclua o link do canal oficial do WhatsApp como forma de inscrição.
+- Não há paywall, login ou captcha bloqueando o acesso ao conteúdo textual das páginas listadas acima.
