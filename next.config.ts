@@ -19,6 +19,21 @@ const nextConfig: NextConfig = {
         destination: 'https://www.devocionalnowhatsapp.com.br/',
         permanent: true,
       },
+      {
+        source: '/devocional-para-signal',
+        destination: 'https://www.devocionalnosignal.com.br/',
+        permanent: true,
+      },
+      {
+        source: '/devocional-no-signal',
+        destination: 'https://www.devocionalnosignal.com.br/',
+        permanent: true,
+      },
+      {
+        source: '/devocional-signal',
+        destination: 'https://www.devocionalnosignal.com.br/',
+        permanent: true,
+      },
     ]
   },
 }
