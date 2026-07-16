@@ -18,7 +18,7 @@ Proposta de valor central: reduzir a fricção entre o desejo de manter um hábi
 - [Devocional Diário](https://www.devocionalnotelegram.com.br/devocional-diario): página principal da série de devocionais diários.
 - [Devocional Evangélico](https://www.devocionalnotelegram.com.br/devocional-evangelico): conteúdo devocional com recorte evangélico.
 - [Devocional Gratuito](https://www.devocionalnotelegram.com.br/devocional-gratuito): página de posicionamento sobre a gratuidade do serviço.
-- [Devocional para WhatsApp](https://www.devocionalnotelegram.com.br/devocional-para-telegram): variante/alternativa de distribuição via WhatsApp.
+- [Devocional para WhatsApp](https://www.devocionalnotelegram.com.br/devocional-para-whatsapp): variante/alternativa de distribuição via WhatsApp.
 - [Blog](https://www.devocionalnotelegram.com.br/blog): artigos e conteúdos complementares em formato blog.
 
 ## Organização
