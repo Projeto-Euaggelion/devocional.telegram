@@ -1,3 +1,4 @@
+// /blog/[slug]/page.tsx
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import fs from "fs"
@@ -16,6 +17,8 @@ import {
 } from "@/components/ui/breadcrumb"
 import { Separator } from "@/components/ui/separator"
 import { InteractionButton } from "@/components/interaction-button"
+import { JsonLd } from "@/components/json-ld"
+import { blogPostingSchema, breadcrumbSchema, SITE_URL } from "@/lib/schema"
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -49,6 +52,8 @@ async function getPostData(slug: string) {
         keywords?: string[]
         canonical?: string
         ogImage?: string
+        date?: string
+        author?: string
       },
       content,
     }
@@ -156,6 +161,23 @@ export default async function DevocionalBomDiaPage({ params }: PageProps) {
 
   return (
     <main>
+      <JsonLd
+        data={[
+          blogPostingSchema({
+            slug,
+            title: post.frontmatter.title ?? "",
+            description: post.frontmatter.description ?? "",
+            date: post.frontmatter.date,
+            image: post.frontmatter.ogImage,
+            author: post.frontmatter.author,
+          }),
+          breadcrumbSchema([
+            { name: "Home", url: SITE_URL },
+            { name: "Blog", url: `${SITE_URL}/blog` },
+            { name: post.frontmatter.title ?? "", url: `${SITE_URL}/blog/${slug}` },
+          ]),
+        ]}
+      />
       <article className="max-w-3xl md:max-w-full mx-auto space-y-12 prose prose-invert prose-headings:text-zinc-50 prose-p:text-zinc-400 prose-strong:text-zinc-300">
         <header className="px-8 py-20 md:px-20 md:py-24 bg-blue-950/40">
           <div className="md:max-w-3xl mx-auto space-y-4">

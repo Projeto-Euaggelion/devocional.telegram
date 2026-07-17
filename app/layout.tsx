@@ -5,6 +5,8 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/next"
+import { JsonLd } from "@/components/json-ld"
+import { websiteSchema, organizationSchema } from "@/lib/schema"
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'})
 const fontMono = Geist_Mono({
@@ -92,6 +94,7 @@ export default function RootLayout({
         <ThemeProvider>{children}</ThemeProvider>
         <Analytics/>
         <GoogleAnalytics gaId="G-XE4TMCVDLC" />
+        <JsonLd data={[websiteSchema(), organizationSchema()]} />
       </body>
     </html>
   )
