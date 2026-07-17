@@ -6,12 +6,22 @@ import matter from "gray-matter"
 import { MDXRemote } from "next-mdx-remote/rsc"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
+import { Separator } from "@/components/ui/separator"
+import { InteractionButton } from "@/components/interaction-button"
 
 interface PageProps {
   params: Promise<{ slug: string }>
 }
 
-const CONTENT_DIR = path.join(process.cwd(), "content")
+const CONTENT_DIR = path.join(process.cwd(), "content/blog")
 
 async function getPostData(slug: string) {
   try {
@@ -155,30 +165,42 @@ export default async function DevocionalBomDiaPage({ params }: PageProps) {
             <p className="text-zinc-400 text-lg">
               {post.frontmatter.description}
             </p>
-
-            {/* asChild evita a renderização inválida de um <button> contendo um <a> */}
-            <Button className="w-full py-6 mt-10 font-semibold">
-              <a
-                href="https://whatsapp.com/channel/0029Vb7awlL8aKvAzcgyrd3c"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full h-full flex items-center justify-center"
-              >
-                Entrar no canal
-              </a>
-            </Button>
           </div>
         </header>
 
-        {/* Renderiza o conteúdo compilado do Markdown */}
         <section className="mx-auto md:max-w-3xl px-10 prose prose-zinc dark:prose-invert">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink render={<a href="/" />}>Home</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink render={<a href="/blog" />}>
+                  Blog
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>{post.frontmatter.title}</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+          <Separator className="my-8"/>
+
           <MDXRemote source={post.content} components={mdxComponents} />
+
+          <Separator className="my-8"/>
+
+          <div className="w-full flex flex-row justify-end md:justify-start items-center">
+            <InteractionButton slug={slug} />
+          </div>
         </section>
 
         <footer className="relative border-t border-border px-10 md:px-20 py-20 mt-10 md:mt-20 bg-blue-950/40">
           <div className="max-w-3xl mx-auto flex flex-col gap-10 relative z-10">
               <h4 className="text-4xl font-bold">
-                  Receba nossos devocionais, gratuitamente, em seu WhatsApp
+                  Receba nossos devocionais, gratuitamente, em seu Telegram
               </h4>
               <Button className="w-full py-6 font-semibold">
                   <a

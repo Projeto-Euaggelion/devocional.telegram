@@ -5,7 +5,6 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/next"
-import Script from "next/script"
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'})
 const fontMono = Geist_Mono({

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description: "Acompanhe nossas últimas publicações de devocionais matinais, mensagens de bom dia e estudos bíblicos diários.",
 }
 
-const CONTENT_DIR = path.join(process.cwd(), "content")
+const CONTENT_DIR = path.join(process.cwd(), "content/blog")
 const POSTS_PER_PAGE = 6
 
 interface BlogPost {
