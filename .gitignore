@@ -1,4 +1,6 @@
 # dependencies
+.open-next/
+.wrangler/
 /node_modules
 /.pnp
 .pnp.*
